@@ -1,4 +1,66 @@
 body {
-  background-color: turquoise;
+  background-color: rgba(255, 242, 229, 0.25);
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+   justify-content: center;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 10px;
+}
+
+.para {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -.004em;
+  word-break: break-all;
+  color: rgba(0,0,0,.8);
+  font-family: ferrous-joshi;
+}
+.para p {
+  margin-top: 21px;
+}
+
+@media only screen and (min-width: 768px) {
+  .para {
+    letter-spacing: -.003em;
+    font-size: 21px;
+    line-height: 1.58;
+  }
+
+  .para p {
+    margin-top: 29px;
+  }
+}
+
+.border-gray {
+  border-top-style: solid;
+  border-top-color: #f0f0f0;
+  border-top-width: 6px;
 }

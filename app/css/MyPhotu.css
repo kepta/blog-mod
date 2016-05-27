@@ -1,0 +1,11 @@
+.MyPhotu img {
+    height: 200px;
+    width: 138px;
+    border: 4px;
+    border-top: 0;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #f0f0f0;
+    position: relative;
+    top: -7px;
+}

@@ -1,3 +1,5 @@
+import './css/reset.css';
+import './css/medium.css';
 import 'flexboxgrid/dist/flexboxgrid.css';
 
 import { render } from 'react-dom';
@@ -26,7 +28,8 @@ const store = createStore(
     applyMiddleware(
       ...middleware
     ),
-    window.devToolsExtension && process.env.NODE_ENV !== 'production' ? window.devToolsExtension() : f => f
+    window.devToolsExtension && process.env.NODE_ENV !== 'production' ?
+      window.devToolsExtension() : f => f
   )
 );
 

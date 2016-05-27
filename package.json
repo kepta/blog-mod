@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha tests/.setup.js tests/**/*.test.js --compilers js:babel-core/register",
     "start": "webpack-dev-server --content-base build",
-    "build": "webpack && cp CNAME build",
+    "build": "webpack && cp CNAME build && mkdir build/assets && cp assets/**.* build/assets",
     "lint": "eslint . --ext .js --ext .jsx  ",
     "deploy": "gh-pages -o pages -d build -b master",
     "build:deploy": "npm run build && npm run deploy"
