@@ -22,15 +22,10 @@ export default class App extends React.Component {
   state = {
     kuch: null,
   }
-  random = (d) => {
-    var x = 5*d;
-    return x*x;
-  }
   render() {
-    console.log("crash");
-    this.random(5);
+    console.log('magic happens');
     return (
-      <h1 onClick={() => { this.props.actions.setHello('wow'); }}>
+      <h1 onClick={() => { this.props.actions.setHello('wow' + Math.random()); }}>
         magicss{this.props.sample.data}
       </h1>
     );

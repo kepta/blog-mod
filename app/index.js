@@ -1,4 +1,4 @@
-import 'flexboxgrid/dist/flexboxgrid.min.css';
+import 'flexboxgrid/dist/flexboxgrid.css';
 
 import { render } from 'react-dom';
 import React from 'react';
@@ -26,7 +26,7 @@ const store = createStore(
     applyMiddleware(
       ...middleware
     ),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.devToolsExtension && process.env.NODE_ENV !== 'production' ? window.devToolsExtension() : f => f
   )
 );
 

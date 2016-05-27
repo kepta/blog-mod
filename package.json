@@ -8,7 +8,8 @@
     "start": "webpack-dev-server --content-base build",
     "build": "webpack && cp CNAME build",
     "lint": "eslint . --ext .js --ext .jsx  ",
-    "deploy": "gh-pages -d build -b master"
+    "deploy": "gh-pages -o pages -d build -b master",
+    "build:deploy": "npm run build && npm run deploy"
 
   },
   "repository": {
